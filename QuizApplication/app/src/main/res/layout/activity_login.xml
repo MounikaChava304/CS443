@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/userIdInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="42dp"
+        android:hint="Enter Student/Instructor ID" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userIdInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:inputType="textPassword"
+        android:hint="Enter Password" />
+
+    <Spinner
+        android:id="@+id/spinner_accountType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userPassword"
+        android:layout_alignStart="@+id/userPassword"
+        android:textSize="30sp"
+        android:paddingLeft="8dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/DarkGray"
+        android:textColor="@color/Black"
+        android:text="REGISTER/LOGIN"
+        android:textSize="30sp" />
+</RelativeLayout>
