@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:padding="16dp"
+    tools:context=".InstructorActivity">
+
+
+    <Button
+        android:id="@+id/button_add_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:text="Add Quiz Questions"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/quizIdInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_add_questions"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="42dp"
+        android:hint="Enter Quiz ID" />
+
+    <Button
+        android:id="@+id/button_view_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quizIdInput"
+        android:layout_centerInParent="true"
+        android:text="View Quiz Scores"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
